@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex</title>
+    <!--main css file-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--normlize css file-->
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <!--font awesome all css min file-->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- boot strap files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <!--google fonts : work sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- start sidebar -->
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <span class="vertex p-lg-2">Vertex</span>
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 4</a>
+                    </li>
+                      
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Test 1</a></li>
+                        <li><a class="dropdown-item" href="#">Test 2</a></li>
+                        <li><a class="dropdown-item" href="#">Test 3</a></li>
+                        <li><a class="dropdown-item" href="#">Test 4</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Test 1</a></li>
+                        <li><a class="dropdown-item" href="#">Test 2</a></li>
+                        <li><a class="dropdown-item" href="#">Test 3</a></li>
+                        <li><a class="dropdown-item" href="#">Test 4</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!-- End sidebar -->
+    <!-- Start Navbar -->
+        <!-- <nav class="navbar navbar-expand-lg bg-light sticky-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/vertexlogo.jpg" alt="" width="50" height="50">
+                <span class="vertex p-lg-3">Vertex</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav> -->
+    <!-- End Navbar -->
+    <!--Start Header-->
+    <!-- <div class="header">
+        <div class="container">
+            <img class="logo" src="images/logo.png" alt="">
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div> -->
+    <!--end Header-->
+    <!-- start landing section -->
+    <div class="landing">
+        <div class="background">
+        </div>
+        <div class="intro-text">
+            <h1>Hello There</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing el</p>
+        </div>
+    </div>
+    <!-- end landing section -->
+    <!-- Start Features -->
+
+    <div class="features">
+        <div class="container">
+            <div class="feat">
+                <i class="fas fa-magic fa-3x"></i>
+                <h3>Tell Us Your idea</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur distinctio eum ullam id eveniet delectus necessitatibus quos, inventore, laborum, assumenda totam blanditiis qui voluptatem iure obcaecati veritatis sunt rerum sed!</p>
+            </div>
+            <div class="feat">
+                <i class="far fa-gem fa-3x"></i>
+                <h3>We Well do All The Work</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur distinctio eum ullam id eveniet delectus necessitatibus quos, inventore, laborum, assumenda totam blanditiis qui voluptatem iure obcaecati veritatis sunt rerum sed!</p>
+            </div>
+            <div class="feat">
+                <i class="fas fa-globe-asia fa-3x"></i>
+                <h3>Your Product Is Worlwide</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur distinctio eum ullam id eveniet delectus necessitatibus quos, inventore, laborum, assumenda totam blanditiis qui voluptatem iure obcaecati veritatis sunt rerum sed!</p>
+            </div>
+        </div>
+    </div>
+    <!-- end Features -->
+
+    <!-- Start Services -->
+
+    <div class="services" id="services">
+        <div class="container">
+            <h2 class="special-heading">Services</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti culpa iure</p>
+            <!-- start services content -->
+            <div class="services-content">
+                <!-- start service column 1 -->
+                <div class="column">
+                    <!-- start service num 1 -->
+                    <div class="serv">
+                        <i class="fas fa-palette fa-2x"></i>
+                        <div class="text">
+                            <h3>GIS</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti repellendus consequuntur dolor doloremque ad autem, doloribus vel fugiat vero non totam ab quidem iste? Pariatur tempore sit voluptate qui nobis.</p>
+                        </div>
+                    </div>
+                    <!-- end service num 1 -->
+                    <!-- start service num 2 -->
+                    <div class="serv">
+                        <i class="fab fa-sketch fa-2x"></i>
+                        <div class="text">
+                            <h3>RS</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti repellendus consequuntur dolor doloremque ad autem, doloribus vel fugiat vero non totam ab quidem iste? Pariatur tempore sit voluptate qui nobis.</p>
+                        </div>
+                    </div>
+                    <!-- end service num 2 -->
+                </div>
+                <!-- end service column 1 -->
+
+                <!-- start service column 2 -->
+                <div class="column">
+                    <!-- start service num 1 -->
+                    <div class="serv">
+                        <i class="fas fa-palette fa-2x"></i>
+                        <div class="text">
+                            <h3>GIS</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti repellendus consequuntur dolor doloremque ad autem, doloribus vel fugiat vero non totam ab quidem iste? Pariatur tempore sit voluptate qui nobis.</p>
+                        </div>
+                    </div>
+                    <!-- end service num 1 -->
+                    <!-- start service num 2 -->
+                    <div class="serv">
+                        <i class="fab fa-sketch fa-2x"></i>
+                        <div class="text">
+                            <h3>RS</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti repellendus consequuntur dolor doloremque ad autem, doloribus vel fugiat vero non totam ab quidem iste? Pariatur tempore sit voluptate qui nobis.</p>
+                        </div>
+                    </div>
+                    <!-- end service num 2 -->
+                </div>
+                <!-- end service column 2 -->
+
+                <!-- start service column 2 -->
+                <div class="column">
+                    <div class="image image-column">
+                        <img src="images/serv3.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- end services content -->
+        </div>
+    </div>
+    <!-- End Services -->
+    <!-- Start Portfolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="special-heading">portfolio</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="portfolio-content">
+                <div class="card">
+                    <img src="images/portfolio.jpg" alt="">
+                    <div class="info">
+                        <h3></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/portfolio.jpg" alt="">
+                    <div class="info">
+                        <h3></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/portfolio.jpg" alt="">
+                    <div class="info">
+                        <h3></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Portfolio -->
+
+    <!-- Start About -->
+        <div class="about" id="about">
+            <div class="container">
+                <h2 class="special-heading">About</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <div class="about-content">
+                    <div class="image">
+                        <img src="images/about.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam accusantium, incidunt dignissimos repellat illum praesentium ad non quam enim laudantium labore pariatur, quo hic? Maxime alias suscipit rem sunt cumque?</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem delectus facere vero odit saepe repudiandae voluptas rerum, ipsa, doloribus, sint numquam deleniti fugit voluptatum optio! Temporibus dolor cupiditate autem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End About -->
+
+    <!-- Start contact -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <h2 class="special-heading">Contact</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="info">
+            <p class="label">Feel Free to drop us a line at:</p>
+            <a href="mailto:info@vertex-infosys.com?subject=contact" class="link">Vertex</a>
+            <div class="social">
+                <p>Find Us In Social Networks</p>
+                <a href="https://www.linkedin.com/company/vertex-infosys/" target="_blank">
+                    <i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/vertex.for.information.systems" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- End contact -->
+    <!-- Start Footer -->
+        <div class="footer">
+            &copy; 2022 <span>Vertex</span> All Right Reserved
+        </div>
+    <!-- End Footer -->
+
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome js file -->
+    <!-- <script src="js/all.min.js"></script> -->
+</body>
+</html>
